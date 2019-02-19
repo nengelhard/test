@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        
+        
+        <title>Challenge3 Columns</title>
+        <style>
+        
+            #wrapper{
+                width: 1090px;
+                
+                padding: 10px;
+                
+                margin: 20px;
+                
+                border: 10px outset;
+                border-color: blue;
+                border-radius: 20px;
+              
+            }
+            
+            .rowWrapper{
+                
+                width: 438px;
+                margin:20px;
+                border: 10px outset;
+                border-color: red;
+                background-color: pink;
+                margin-bottom: 30px;
+                border-radius: 20px;
+                height: 100px
+            }
+            
+            
+            
+            
+            
+            #header{
+                
+                text-align: center;
+                
+            }
+        
+            .column{
+                
+                display: inline-block;
+                float: left;
+                
+            }
+            .group:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+        
+            .leftColumn{
+                width: 225px;
+                padding: 20px;
+                margin: 20px;
+                height: 400px;
+                border: 10px outset yellow;
+                border-radius: 20px;
+                background-color: lightyellow;
+            }
+            .rightColumn{
+                
+                width: 167px;
+                padding:20px;
+                margin: 20px;
+                height: 400px;
+                border: 10px outset aqua;
+                border-radius: 20px;
+                background-color: aquamarine;
+                border-color: aqua;
+            }
+            
+            
+            .navbar a {
+                    float: left;
+                    
+                    padding: 20px 30px;
+                    font-size: 20px;
+                    list-style-type: none;
+                    color: yellow;
+                    display: inline;
+                    background-color: red;
+            }
+
+                
+            .navbar a:hover {
+                    background-color: aqua;
+                    
+                    
+                }
+            
+        </style>
+        
+        
+        
+    </head>
+    
+    
+    <body>
+         <div class="navbar">
+        
+        
+        <a href="njewwcHNavbarBio.html">Home</a>
+            
+            
+        <a href="njewwcSettingUp.html">Challenge 1</a>
+        <a href="njewwcColumns2.html">Columns</a>
+             <br/>
+             <br/>
+             <br/>
+             
+        </div>
+         
+        <!-- Main wrapper. This div should wrap all columns, row wrapper, and title header -->
+        <div id= "wrapper" class="group">
+            <div id= "header"><h2>CS/IT 2830- Multi-Column Layout</h2></div>
+            <hr>
+            
+            <!-- Left Column -->
+            <div class="column leftColumn">
+                Web development is the coding or programming that enables website functionality, per the owner's requirements. It mainly deals with the non-design aspect of building websites, which includes coding and writing markup.
+
+                Web development ranges from creating plain text pages to complex web-based applications, social network applications and electronic business applications.
+                
+                <!--I got this from https://www.techopedia.com/definition/23889/web-development
+                -->
+            </div>
+            
+            <!-- Row Wrapper. This div will contain two rows -->
+            <div  class="column">
+                
+                    <div class="rowWrapper"> 
+                            Physical width calculation for left column=
+                        
+                        content width 225
+                        +
+                        padding left 20px
+                        +
+                        padding right 20px
+                        +
+                        border left 10px
+                        +
+                        border right 10px
+                        +
+                        margin left 20px
+                        +
+                        margin right 20px
+                        = 325px
+                        
+                        
+                    </div>
+                
+                
+                    <div class="rowWrapper">
+                        
+                            physical width calculation for right column=
+                        
+                        content width 167px
+                        +
+                        padding left 20px
+                        +
+                        padding right 20px
+                        +
+                        margin left 20px
+                        +
+                        margin right 20px
+                        +
+                        border left 10px
+                        +
+                        border right 10px
+                        = 267px
+                        
+                        
+                    </div>
+                
+                
+                
+            </div>
+            
+            <!-- Right Column -->
+            <div class="column rightColumn">
+                
+                The difference between physical width and content width is that with content width you are only accounting for the stuff that is inside of the "box", this is controlled with the width keyword in css. Physical width includes things like margin padding and border.
+            
+            
+            
+            </div>
+        </div>
+    </body>
+</html>
